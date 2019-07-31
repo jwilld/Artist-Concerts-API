@@ -7,3 +7,6 @@ const Artist = new mongoose.Schema({
         }
     ]
 })
+
+
+module.exports = mongoose.model('Artist',Artist)
