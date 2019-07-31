@@ -7,14 +7,14 @@ The subcategory for concerts will be a youtube video showing parts of the concer
 
 # APIs used and why
 ### Concerts Information
- Ticketmaster - https://developer.ticketmaster.com
- Songkick - https://www.songkick.com/developer its going to take up to 7 days to get 
+ ###### Ticketmaster - https://developer.ticketmaster.com
+ ###### Songkick - https://www.songkick.com/developer its going to take up to 7 days to get 
  approved for this API
 
 ### Concert Videos
- Youtube - https://developers.google.com/youtube/v3/getting-started
+ ###### Youtube - https://developers.google.com/youtube/v3/getting-started
 
 ### Songs
- Spotify - https://developer.spotify.com/documentation/web-api/quick-start/
- SoundCloud - https://developers.soundcloud.com
+ ###### Spotify - https://developer.spotify.com/documentation/web-api/quick-start/
+ ###### SoundCloud - https://developers.soundcloud.com
 
