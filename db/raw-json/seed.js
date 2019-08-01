@@ -1,6 +1,9 @@
-import Artist from '../../models/Artists';
-import artists from './artists.json';
+const mongoose = require('../connection')
 
+const Artist = require('../../models/Artists')
+let artists = require('./artists.json')
+
+const Youtube = require('../../models/Youtube').default.default
 // const youtube = require('./youtube.json')
 
 
