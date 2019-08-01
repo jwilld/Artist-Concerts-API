@@ -1,10 +1,10 @@
-const mongoose = require('../connection')
+import { Schema, model } from '../db/connection';
 
 
 
 
 
-const Youtube = new mongoose.Schema({
+const Youtube = new Schema({
     ['Rich Brian']:{
         items:[
             {
@@ -17,4 +17,4 @@ const Youtube = new mongoose.Schema({
 })
 
 
-module.exports = mongoose.model('Youtube',Youtube)
+export default model('Youtube',Youtube)

@@ -1,8 +1,8 @@
-const mongoose = require('../connection')
+import { Schema, model } from '../db/connection';
 
-const Artist = new mongoose.Schema({
+const Artist = new Schema({
     name: String
 })
 
 
-module.exports = mongoose.model('Artist',Artist)
+export default model('Artist',Artist)

@@ -1,17 +1,12 @@
-const mongoose = require('../../connection')
+import Artist from '../../models/Artists';
+import artists from './artists.json';
 
-const Artist = require('../../models/Artists')
-let artists = require('./artists.json')
-
-const Youtube = require('../../models/Youtube')
-const youtube = require('./youtube.json')
+// const youtube = require('./youtube.json')
 
 
-// Artist.deleteMany({}).then(Artist.create(artists))
-
-console.log(youtube['Rich Brian'][0].id.videoId)
-// Youtube.deleteMany({}).then(Youtube.create(youtube))
+Artist.deleteMany({}).then(Artist.create(artists))
 
 
 
- 
+
+
