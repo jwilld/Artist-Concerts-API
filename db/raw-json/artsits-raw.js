@@ -14,3 +14,4 @@ axios.get("https://app.ticketmaster.com/discovery/v2/attractions.json?classifica
             console.log(err)
         }})
     })
+

@@ -1,20 +1,14 @@
-import { Schema, model } from '../db/connection';
+const mongoose = require('../db/connection')
 
-
-
-
-
-const Youtube = new Schema({
-    ['Rich Brian']:{
-        items:[
-            {
-    
-                
-            }
-        ]
+const Youtube = new mongoose.Schema({
+    link:{
+        type: String
+    },
+    name:{
+        type: String
     }
 
 })
 
 
-export default model('Youtube',Youtube)
+module.exports = mongoose.model('Youtube',Youtube)
