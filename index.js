@@ -16,8 +16,5 @@ app.use('/',youtubeController)
 
 
 
-// app.get("/:name/", function(req,res){
-//     res.send(`Hello bruh`)
-// })
 
 app.listen(4000, () => console.log('im running on 4000'))

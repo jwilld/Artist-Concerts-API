@@ -72,7 +72,7 @@ navigate between Ticketmaster and Youtube to see how an artist's concert is.
 ##### Get '/artists' or '/'
 - Returns a list of all artists.
 
-##### Get '/<<artist name>>' 
+##### Get '/artists/<<artist name>>' 
 - Returns an artist by name.
 
 ##### Post '/artists' 

@@ -13,7 +13,7 @@ router.get("/", (req, res) => {
   res.redirect("/artists");
 });
 
-router.get("/:name",(req,res) => {
+router.get("/artists/:name",(req,res) => {
     Artist.find({name: req.params.name})
     .then(artist => res.json(artist))
 })
