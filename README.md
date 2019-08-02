@@ -17,7 +17,7 @@ navigate between Ticketmaster and Youtube to see how an artist's concert is.
  # Technologies
  - Created with Express, Mongoose and Node.js
  - Deployed with Heroku
- - Hosted with MongoDB Atlas
+ - Hosted with Mongo Atlas
  - Tested on Postman
 
 # Dependencies
