@@ -1,7 +1,7 @@
 const mongoose = require('../db/connection')
 
 const Artist = new mongoose.Schema({
-    name: String
+    name: String,
 })
 
 

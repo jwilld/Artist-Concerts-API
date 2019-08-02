@@ -1,13 +1,8 @@
 const mongoose = require('../db/connection')
 
 const Youtube = new mongoose.Schema({
-    link:{
-        type: String
-    },
-    name:{
-        type: String
-    }
-
+    name: String,
+    link: String
 })
 
 
