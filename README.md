@@ -39,7 +39,6 @@ navigate between Ticketmaster and Youtube to see how an artist's concert is.
         "__v": 0
     }
 ### Youtube Links
-[
     {
         "_id": "5d43f087503fc361db695734",
         "link": "https://www.youtube.com/watch?v=i0zW7qrKwtw",
