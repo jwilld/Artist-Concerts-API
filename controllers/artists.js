@@ -11,7 +11,7 @@ router.get('/',(req,res) => {
     res.redirect('/artists')
 })
 
-router.post('/new', (req,res) => {
-    Artist.create(req.body).then(arsits => res.json(artist))
+router.post('/artists', (req,res) => {
+    Artist.create(req.body).then(artist => res.json(artist))
 })
 module.exports = router
