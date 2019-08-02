@@ -69,35 +69,35 @@ navigate between Ticketmaster and Youtube to see how an artist's concert is.
 
 ### Artists
 
-######  Get '/artists' or '/'
+##### Get '/artists' or '/'
 - Returns a list of all artists.
 
-###### Get '/<<artist name>>' 
+##### Get '/<<artist name>>' 
 - Returns an artist by name.
 
-###### Post '/artists' 
+##### Post '/artists' 
 - takes the body of the request and creates an artist with the key value pair of 'name: (artist name)'.
 
-###### Delete '/artists/<<artist name>>' 
+##### Delete '/artists/<<artist name>>' 
 - takes the artists name and finds the genre, Youtube links and its name then deletes them all. 
 
 ### Genres
 
-###### Get '/genres' 
+##### Get '/genres' 
 - Returns a list of all artist's genres.
 
-###### Post '/genres'
+##### Post '/genres'
 - takes the body of the request and creates a genre with the key value pair of 'name: (artist name)' and 'genre: (artist's genre)'.
 
 ### Youtube Links
 
-###### Get '/youtube'
+##### Get '/youtube'
 - Returns a list of all artist's Youtube concert links.
 
-###### Get '/youtube/<<artist name>>'
+##### Get '/youtube/<<artist name>>'
 - Returns an artist's links by the arist's name.
 
-###### Put '/<<artist name>>'
+##### Put '/<<artist name>>'
 - Takes the body of the request and updates an artist's link with the key value pair of 'link: (artist's video link)'
 
 
