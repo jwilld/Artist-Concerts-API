@@ -1,4 +1,4 @@
-# All Music API
+# Artist Concerts API
 
 # Description
 This API shows concert information for an artist from Ticketmaster. The information about the artist includes their concert videos from youtube and genre. Ultimately this would eliminate the need to 
