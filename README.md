@@ -14,13 +14,13 @@ navigate between Ticketmaster and Youtube to see how an artist's concert is.
  ###### Youtube - https://developers.google.com/youtube/v3/getting-started
  The videos for each artist are from Youtube. 
 
- #Technologies
+ # Technologies
  - Created with Express, Mongoose and Node.js
  - Deployed with Heroku
  - Hosted with MongoDB Atlas
  - Tested on Postman
 
- #Dependencies
+# Dependencies
 - express
 - mongoose 
 - nodemon 
