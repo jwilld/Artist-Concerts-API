@@ -13,6 +13,11 @@ router.get("/", (req, res) => {
   res.redirect("/artists");
 });
 
+router.get("/:name",(req,res) => {
+    Artist.find({name: req.params.name})
+    .then(artist => res.json(artist))
+})
+
 router.post("/artists", (req, res) => {
   Artist.create(req.body).then(artist => res.json(artist));
 });
