@@ -14,17 +14,17 @@ Artist.deleteMany({}).then(Artist.create(artists))
 
 
 
-.then(Artist.find({}).then( artist => artist.forEach(artist => {
+Artist.find({}).then( artist => artist.forEach(artist => {
     youtube[artist.name].forEach(link => Youtube.deleteMany({})
     .then(Youtube.create({link:`https://www.youtube.com/watch?v=${link.id.videoId}`,name: artist.name})))
-})))
+}))
 
 
-.then(Genre.find({}).then(Genre.deleteMany({}).then(artists.forEach(artist =>{
+Genre.find({}).then(Genre.deleteMany({}).then(artists.forEach(artist =>{
     artist.classifications.forEach(classification => {
         Genre.create({genre: classification.genre.name, name: artist.name})
     })
-}))))
+})))
 
 
 
