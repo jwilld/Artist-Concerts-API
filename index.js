@@ -5,12 +5,14 @@ const app = express()
 
 const artistsController = require('./controllers/artists')
 const genresController = require('./controllers/genre')
+const youtubeController = require('./controllers/youtube')
 
 
 app.use(parser.json())
 
 app.use('/', artistsController)
 app.use('/', genresController)
+app.use('/',youtubeController)
 
 
 // app.get("/:name/", function(req,res){
