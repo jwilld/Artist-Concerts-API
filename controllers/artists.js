@@ -17,20 +17,14 @@ router.post("/artists", (req, res) => {
   Artist.create(req.body).then(artist => res.json(artist));
 });
 
-router
-  .delete("/artists/:name", (req, res) => {
-    Artist.findOneAndDelete({ name: req.params.name }).then(
-      res.send(`${req.params.name} deleted from artists`)
-    );
-  })
-  .then(
+router.delete("/artists/:name", (req, res) => {
+  Artist.findOneAndDelete({ name: req.params.name }).then(
     Youtube.deleteMany({ name: req.params.name }).then(
-      res.send(`Deleted youtube links for ${req.params.name}`)
-    )
-  )
-  .then(
-    Genre.deleteMany({ name: req.params.name }).then(
-      res.send(`Deleted ${req.params.name}'s genre`)
+      Genre.deleteMany({ name: req.params.name }).then(
+        res.send(`Deleted ${req.params.name} from genres,artists and youtube`)
+      )
     )
   );
+});
+
 module.exports = router;

@@ -1,20 +1,18 @@
 # All Music API
 
 # Description
-This API will have a main category of an Artist then the subcategories for 
-artist will be album/concerts.The subcategory for album will be songs. 
-The subcategory for concerts will be a youtube video showing parts of the concert.
+This API shows concert information for an artist from Ticketmaster. The information about the artist includes their concert videos from youtube and genre. 
+
 
 # APIs used and why
-### Concerts Information
+### Concert Artists/Genres
  ###### Ticketmaster - https://developer.ticketmaster.com
- ###### Songkick - https://www.songkick.com/developer not implemented yet
+ Artists and their genres and drawn from Ticketmster.
 
 ### Concert Videos
  ###### Youtube - https://developers.google.com/youtube/v3/getting-started
+ The videos for each artist are from Youtube. 
  
 
-### Songs
- ###### Spotify - https://developer.spotify.com/documentation/web-api/quick-start/
- ###### SoundCloud - https://developers.soundcloud.com
+
 
