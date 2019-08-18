@@ -1,0 +1,623 @@
+{
+    "meta": {
+        "status": 200
+    },
+    "response": {
+        "artist": {
+            "alternate_names": [
+                "Cameron E. Giles",
+                "Cameron Ezike Giles",
+                "Killa Cam",
+                "Cameron Giles"
+            ],
+            "api_path": "/artists/1",
+            "description": {
+                "dom": {
+                    "tag": "root",
+                    "children": [
+                        {
+                            "tag": "p",
+                            "children": [
+                                {
+                                    "tag": "em",
+                                    "children": [
+                                        "Cam'ron and Rap Genius founder ",
+                                        {
+                                            "tag": "a",
+                                            "attributes": {
+                                                "href": "https://genius.com/VeggieCrumble",
+                                                "rel": "noopener"
+                                            },
+                                            "data": {
+                                                "api_path": "/users/3"
+                                            },
+                                            "children": [
+                                                "VeggieCrumble (aka Ilan Zechory)"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "",
+                        {
+                            "tag": "p",
+                            "children": [
+                                "Cameron “Cam'ron” Giles is perhaps the quintessential Rap Genius artist.  Funny (like us), boastful (ditto), clever (yup), and rich (well..)"
+                            ]
+                        },
+                        "",
+                        {
+                            "tag": "p",
+                            "children": [
+                                "Killa Cam started out alongside Big L, Ma$e, his cousin Bloodshed (R.I.P.) and others in the short-lived group ",
+                                {
+                                    "tag": "a",
+                                    "attributes": {
+                                        "href": "http://www.angelfire.com/hiphop3/harlemsfinest139/Pages/coc.html",
+                                        "rel": "noopener nofollow"
+                                    },
+                                    "children": [
+                                        "Children of the Corn"
+                                    ]
+                                },
+                                ".  He had several successful solo albums, but it’s his 2004 record ",
+                                {
+                                    "tag": "em",
+                                    "children": [
+                                        "Purple Haze"
+                                    ]
+                                },
+                                " that stands as the quintessence of all things Cam'ronian."
+                            ]
+                        },
+                        "",
+                        {
+                            "tag": "p",
+                            "children": [
+                                "Since then, Cam has kept his computers ‘puting on a series of albums and mixtapes by himself, with Dipset, and with his standout new protege Vado.  We here at RG salute Mr. Giles, without whom this site might not exist.  May your diamonds keep on ",
+                                {
+                                    "tag": "a",
+                                    "attributes": {
+                                        "href": "http://www.youtube.com/watch?v=x4sy5Mf6Vak&feature=player_embedded#t=3m00s",
+                                        "rel": "noopener nofollow"
+                                    },
+                                    "children": [
+                                        "doing the Macarena."
+                                    ]
+                                }
+                            ]
+                        },
+                        "",
+                        {
+                            "tag": "p",
+                            "children": [
+                                {
+                                    "tag": "img",
+                                    "attributes": {
+                                        "src": "https://images.genius.com/5648874ad32476ac2f4c59059d157031.400x574x1.jpg",
+                                        "alt": "",
+                                        "width": 400,
+                                        "height": 574
+                                    },
+                                    "data": {
+                                        "animated": "false",
+                                        "thumbnail": {
+                                            "src": "https://images.genius.com/5648874ad32476ac2f4c59059d157031.300x431x1.jpg",
+                                            "height": 431,
+                                            "width": 300
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            "facebook_name": "273941499453015",
+            "followers_count": 229,
+            "header_image_url": "https://images.genius.com/127197cf9f520bae5f229a0cc539df69.800x450x1.jpg",
+            "id": 1,
+            "image_url": "https://images.genius.com/83958b1224d915f25d5975f15a39c0ef.420x420x1.png",
+            "instagram_name": "",
+            "is_meme_verified": false,
+            "is_verified": false,
+            "name": "Cam’ron",
+            "translation_artist": false,
+            "twitter_name": "mr_camron",
+            "url": "https://genius.com/artists/Camron",
+            "current_user_metadata": {
+                "permissions": [
+                    "follow",
+                    "view_activity_stream",
+                    "view_contribution_opportunities"
+                ],
+                "excluded_permissions": [
+                    "edit",
+                    "edit_images",
+                    "edit_names",
+                    "edit_anything",
+                    "merge",
+                    "sort_artist_songs",
+                    "edit_translation_artist",
+                    "see_short_id"
+                ],
+                "interactions": {
+                    "following": false
+                }
+            },
+            "description_annotation": {
+                "_type": "referent",
+                "annotator_id": 1,
+                "annotator_login": "LEMON",
+                "api_path": "/referents/6925648",
+                "classification": "accepted",
+                "fragment": "Cam’ron",
+                "id": 6925648,
+                "is_description": true,
+                "path": "/6925648/Camron/Camron",
+                "range": {
+                    "content": "Cam'ron"
+                },
+                "song_id": null,
+                "url": "https://genius.com/6925648/Camron/Camron",
+                "verified_annotator_ids": [],
+                "annotatable": {
+                    "api_path": "/artists/1",
+                    "context": null,
+                    "id": 1,
+                    "image_url": "https://images.genius.com/83958b1224d915f25d5975f15a39c0ef.420x420x1.png",
+                    "link_title": "Cam’ron",
+                    "title": "Cam'ron",
+                    "type": "Artist",
+                    "url": "https://genius.com/artists/Camron"
+                },
+                "annotations": [
+                    {
+                        "api_path": "/annotations/6925648",
+                        "body": {
+                            "dom": {
+                                "tag": "root",
+                                "children": [
+                                    {
+                                        "tag": "p",
+                                        "children": [
+                                            {
+                                                "tag": "em",
+                                                "children": [
+                                                    "Cam'ron and Rap Genius founder ",
+                                                    {
+                                                        "tag": "a",
+                                                        "attributes": {
+                                                            "href": "https://genius.com/VeggieCrumble",
+                                                            "rel": "noopener"
+                                                        },
+                                                        "data": {
+                                                            "api_path": "/users/3"
+                                                        },
+                                                        "children": [
+                                                            "VeggieCrumble (aka Ilan Zechory)"
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "",
+                                    {
+                                        "tag": "p",
+                                        "children": [
+                                            "Cameron “Cam'ron” Giles is perhaps the quintessential Rap Genius artist.  Funny (like us), boastful (ditto), clever (yup), and rich (well..)"
+                                        ]
+                                    },
+                                    "",
+                                    {
+                                        "tag": "p",
+                                        "children": [
+                                            "Killa Cam started out alongside Big L, Ma$e, his cousin Bloodshed (R.I.P.) and others in the short-lived group ",
+                                            {
+                                                "tag": "a",
+                                                "attributes": {
+                                                    "href": "http://www.angelfire.com/hiphop3/harlemsfinest139/Pages/coc.html",
+                                                    "rel": "noopener nofollow"
+                                                },
+                                                "children": [
+                                                    "Children of the Corn"
+                                                ]
+                                            },
+                                            ".  He had several successful solo albums, but it’s his 2004 record ",
+                                            {
+                                                "tag": "em",
+                                                "children": [
+                                                    "Purple Haze"
+                                                ]
+                                            },
+                                            " that stands as the quintessence of all things Cam'ronian."
+                                        ]
+                                    },
+                                    "",
+                                    {
+                                        "tag": "p",
+                                        "children": [
+                                            "Since then, Cam has kept his computers ‘puting on a series of albums and mixtapes by himself, with Dipset, and with his standout new protege Vado.  We here at RG salute Mr. Giles, without whom this site might not exist.  May your diamonds keep on ",
+                                            {
+                                                "tag": "a",
+                                                "attributes": {
+                                                    "href": "http://www.youtube.com/watch?v=x4sy5Mf6Vak&feature=player_embedded#t=3m00s",
+                                                    "rel": "noopener nofollow"
+                                                },
+                                                "children": [
+                                                    "doing the Macarena."
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "",
+                                    {
+                                        "tag": "p",
+                                        "children": [
+                                            {
+                                                "tag": "img",
+                                                "attributes": {
+                                                    "src": "https://images.genius.com/5648874ad32476ac2f4c59059d157031.400x574x1.jpg",
+                                                    "alt": "",
+                                                    "width": 400,
+                                                    "height": 574
+                                                },
+                                                "data": {
+                                                    "animated": "false",
+                                                    "thumbnail": {
+                                                        "src": "https://images.genius.com/5648874ad32476ac2f4c59059d157031.300x431x1.jpg",
+                                                        "height": 431,
+                                                        "width": 300
+                                                    }
+                                                }
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        "comment_count": 0,
+                        "community": true,
+                        "custom_preview": null,
+                        "has_voters": true,
+                        "id": 6925648,
+                        "pinned": false,
+                        "share_url": "https://genius.com/6925648",
+                        "source": null,
+                        "state": "accepted",
+                        "url": "https://genius.com/6925648/Camron/Camron",
+                        "verified": false,
+                        "votes_total": 27,
+                        "current_user_metadata": {
+                            "permissions": [
+                                "vote",
+                                "propose_edit_to",
+                                "create_comment"
+                            ],
+                            "excluded_permissions": [
+                                "edit",
+                                "cosign",
+                                "uncosign",
+                                "destroy",
+                                "accept",
+                                "reject",
+                                "see_unreviewed",
+                                "clear_votes",
+                                "pin_to_profile",
+                                "unpin_from_profile",
+                                "update_source",
+                                "edit_custom_preview"
+                            ],
+                            "interactions": {
+                                "cosign": false,
+                                "pyong": false,
+                                "vote": null
+                            },
+                            "iq_by_action": {
+                                "accept": {
+                                    "primary": {
+                                        "multiplier": 1,
+                                        "base": 10.0,
+                                        "applicable": true
+                                    }
+                                },
+                                "reject": {
+                                    "primary": {
+                                        "multiplier": 1,
+                                        "base": 2.0,
+                                        "applicable": true
+                                    }
+                                },
+                                "delete": {
+                                    "primary": {
+                                        "multiplier": 1,
+                                        "base": 5.0,
+                                        "applicable": true
+                                    }
+                                }
+                            }
+                        },
+                        "authors": [
+                            {
+                                "attribution": 0.7402597402597402,
+                                "pinned_role": null,
+                                "user": {
+                                    "api_path": "/users/1",
+                                    "avatar": {
+                                        "tiny": {
+                                            "url": "https://images.genius.com/avatars/tiny/c4b758398bc092526335120ea87dd345",
+                                            "bounding_box": {
+                                                "width": 16,
+                                                "height": 16
+                                            }
+                                        },
+                                        "thumb": {
+                                            "url": "https://images.genius.com/avatars/thumb/c4b758398bc092526335120ea87dd345",
+                                            "bounding_box": {
+                                                "width": 32,
+                                                "height": 32
+                                            }
+                                        },
+                                        "small": {
+                                            "url": "https://images.genius.com/avatars/small/c4b758398bc092526335120ea87dd345",
+                                            "bounding_box": {
+                                                "width": 100,
+                                                "height": 100
+                                            }
+                                        },
+                                        "medium": {
+                                            "url": "https://images.genius.com/avatars/medium/c4b758398bc092526335120ea87dd345",
+                                            "bounding_box": {
+                                                "width": 300,
+                                                "height": 400
+                                            }
+                                        }
+                                    },
+                                    "header_image_url": "https://s3.amazonaws.com/filepicker-images-rapgenius/sgqTMQeR9uPApq4dlcLA_1500x500",
+                                    "human_readable_role_for_display": "Staff",
+                                    "id": 1,
+                                    "iq": 55931,
+                                    "login": "LEMON",
+                                    "name": "Tom Lehman",
+                                    "role_for_display": "staff",
+                                    "url": "https://genius.com/LEMON",
+                                    "current_user_metadata": {
+                                        "permissions": [
+                                            "follow"
+                                        ],
+                                        "excluded_permissions": [],
+                                        "interactions": {
+                                            "following": false
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "attribution": 0.1948051948051948,
+                                "pinned_role": null,
+                                "user": {
+                                    "api_path": "/users/1672103",
+                                    "avatar": {
+                                        "tiny": {
+                                            "url": "https://s3.amazonaws.com/filepicker-images-rapgenius/5uvl6rexw8c",
+                                            "bounding_box": {
+                                                "width": 16,
+                                                "height": 16
+                                            }
+                                        },
+                                        "thumb": {
+                                            "url": "https://s3.amazonaws.com/filepicker-images-rapgenius/5uvl6rexw8c",
+                                            "bounding_box": {
+                                                "width": 32,
+                                                "height": 32
+                                            }
+                                        },
+                                        "small": {
+                                            "url": "https://s3.amazonaws.com/filepicker-images-rapgenius/5uvl6rexw8c",
+                                            "bounding_box": {
+                                                "width": 100,
+                                                "height": 100
+                                            }
+                                        },
+                                        "medium": {
+                                            "url": "https://s3.amazonaws.com/filepicker-images-rapgenius/5uvl6rexw8c",
+                                            "bounding_box": {
+                                                "width": 300,
+                                                "height": 400
+                                            }
+                                        }
+                                    },
+                                    "header_image_url": "https://s3.amazonaws.com/filepicker-images-rapgenius/zc3cd4rsbrr",
+                                    "human_readable_role_for_display": "Contributor",
+                                    "id": 1672103,
+                                    "iq": 31432,
+                                    "login": "Jeep24",
+                                    "name": "Jeep24",
+                                    "role_for_display": "contributor",
+                                    "url": "https://genius.com/Jeep24",
+                                    "current_user_metadata": {
+                                        "permissions": [
+                                            "follow"
+                                        ],
+                                        "excluded_permissions": [],
+                                        "interactions": {
+                                            "following": false
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "attribution": 0.051948051948051945,
+                                "pinned_role": null,
+                                "user": {
+                                    "api_path": "/users/12757",
+                                    "avatar": {
+                                        "tiny": {
+                                            "url": "https://s3.amazonaws.com/rapgenius/avatars/tiny/mMKDm7gyTZ28RUx1qcPR.jpg",
+                                            "bounding_box": {
+                                                "width": 16,
+                                                "height": 16
+                                            }
+                                        },
+                                        "thumb": {
+                                            "url": "https://s3.amazonaws.com/rapgenius/avatars/thumb/mMKDm7gyTZ28RUx1qcPR.jpg",
+                                            "bounding_box": {
+                                                "width": 32,
+                                                "height": 32
+                                            }
+                                        },
+                                        "small": {
+                                            "url": "https://s3.amazonaws.com/rapgenius/avatars/small/mMKDm7gyTZ28RUx1qcPR.jpg",
+                                            "bounding_box": {
+                                                "width": 100,
+                                                "height": 100
+                                            }
+                                        },
+                                        "medium": {
+                                            "url": "https://s3.amazonaws.com/rapgenius/avatars/medium/mMKDm7gyTZ28RUx1qcPR.jpg",
+                                            "bounding_box": {
+                                                "width": 300,
+                                                "height": 400
+                                            }
+                                        }
+                                    },
+                                    "header_image_url": "https://s3.amazonaws.com/rapgenius/avatars/medium/mMKDm7gyTZ28RUx1qcPR.jpg",
+                                    "human_readable_role_for_display": "Contributor",
+                                    "id": 12757,
+                                    "iq": 14334,
+                                    "login": "SlimNatey",
+                                    "name": "Naytron Means",
+                                    "role_for_display": "contributor",
+                                    "url": "https://genius.com/SlimNatey",
+                                    "current_user_metadata": {
+                                        "permissions": [
+                                            "follow"
+                                        ],
+                                        "excluded_permissions": [],
+                                        "interactions": {
+                                            "following": false
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "attribution": 0.006493506493506493,
+                                "pinned_role": null,
+                                "user": {
+                                    "api_path": "/users/951311",
+                                    "avatar": {
+                                        "tiny": {
+                                            "url": "https://images.genius.com/avatars/tiny/72c7b067a98de8aabc7c1325013bece8",
+                                            "bounding_box": {
+                                                "width": 16,
+                                                "height": 16
+                                            }
+                                        },
+                                        "thumb": {
+                                            "url": "https://images.genius.com/avatars/thumb/72c7b067a98de8aabc7c1325013bece8",
+                                            "bounding_box": {
+                                                "width": 32,
+                                                "height": 32
+                                            }
+                                        },
+                                        "small": {
+                                            "url": "https://images.genius.com/avatars/small/72c7b067a98de8aabc7c1325013bece8",
+                                            "bounding_box": {
+                                                "width": 100,
+                                                "height": 100
+                                            }
+                                        },
+                                        "medium": {
+                                            "url": "https://images.genius.com/avatars/medium/72c7b067a98de8aabc7c1325013bece8",
+                                            "bounding_box": {
+                                                "width": 300,
+                                                "height": 400
+                                            }
+                                        }
+                                    },
+                                    "header_image_url": "https://s3.amazonaws.com/filepicker-images-rapgenius/xK115j7SRqSFTAzjyp0V_tumblr_mpvo0pdzIa1s0hkoyo1_400.gif",
+                                    "human_readable_role_for_display": "Editor",
+                                    "id": 951311,
+                                    "iq": 88020,
+                                    "login": "swinelord",
+                                    "name": "​swinelord",
+                                    "role_for_display": "editor",
+                                    "url": "https://genius.com/swinelord",
+                                    "current_user_metadata": {
+                                        "permissions": [
+                                            "follow"
+                                        ],
+                                        "excluded_permissions": [],
+                                        "interactions": {
+                                            "following": false
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "attribution": 0.006493506493506493,
+                                "pinned_role": null,
+                                "user": {
+                                    "api_path": "/users/1587767",
+                                    "avatar": {
+                                        "tiny": {
+                                            "url": "https://images.genius.com/9c5fcdf9ede3b666726f11ce4eb1da37.750x750x1.jpg",
+                                            "bounding_box": {
+                                                "width": 16,
+                                                "height": 16
+                                            }
+                                        },
+                                        "thumb": {
+                                            "url": "https://images.genius.com/9c5fcdf9ede3b666726f11ce4eb1da37.750x750x1.jpg",
+                                            "bounding_box": {
+                                                "width": 32,
+                                                "height": 32
+                                            }
+                                        },
+                                        "small": {
+                                            "url": "https://images.genius.com/9c5fcdf9ede3b666726f11ce4eb1da37.750x750x1.jpg",
+                                            "bounding_box": {
+                                                "width": 100,
+                                                "height": 100
+                                            }
+                                        },
+                                        "medium": {
+                                            "url": "https://images.genius.com/9c5fcdf9ede3b666726f11ce4eb1da37.750x750x1.jpg",
+                                            "bounding_box": {
+                                                "width": 300,
+                                                "height": 400
+                                            }
+                                        }
+                                    },
+                                    "header_image_url": "https://images.genius.com/5378832d6ac20f372212ae295c6e1968.708x256x1.jpg",
+                                    "human_readable_role_for_display": "Editor",
+                                    "id": 1587767,
+                                    "iq": 118320,
+                                    "login": "Alekazam",
+                                    "name": "Alekazam",
+                                    "role_for_display": "editor",
+                                    "url": "https://genius.com/Alekazam",
+                                    "current_user_metadata": {
+                                        "permissions": [
+                                            "follow"
+                                        ],
+                                        "excluded_permissions": [],
+                                        "interactions": {
+                                            "following": false
+                                        }
+                                    }
+                                }
+                            }
+                        ],
+                        "cosigned_by": [],
+                        "rejection_comment": null,
+                        "verified_by": null
+                    }
+                ]
+            },
+            "user": null
+        }
+    }
+}
