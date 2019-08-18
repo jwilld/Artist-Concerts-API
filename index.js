@@ -18,9 +18,11 @@ app.use('/',youtubeController)
 
 
 
-app.listen(8080, () => console.log("They see me rollin...on port 8080..."));
-app.set("port", process.env.PORT || 8080);
+// app.listen(8080, () => console.log("They see me rollin...on port 8080..."));
+// app.set("port", process.env.PORT || 8080);
 
-app.listen(app.get("port"), () => {
-  console.log(`✅ PORT: ${app.get("port")} 🌟`);
-});
+// app.listen(app.get("port"), () => {
+//   console.log(`✅ PORT: ${app.get("port")} 🌟`);
+// });
+
+app.listen(3003,()=> console.log('port 3003'))
