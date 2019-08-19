@@ -14,7 +14,6 @@ const Artist = new mongoose.Schema({
         }
     ]
     
-
 })
 
 

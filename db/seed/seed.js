@@ -11,22 +11,31 @@ const youtube = require("./youtube.json");
 
 const Genre = require("../../models/Genre");
 
-// Artist.deleteMany({}).then(Artist.create(artists))
-// for(let i =0;i<= 677; i++){
-//     console.log(`${artists[i].names} number ${i}`)
-// }
-
 // Artist.deleteMany({}).then(Artist.create(artists)).finally(()=> console.log('done seeding artists'))
 
-Hits.find({}).then(
-  Hits.deleteMany({}).then(
-    hits.forEach(hit => 
-      hit.forEach(hitSong =>{Hits.create(hitSong.result)
-      })
-    )
-  )
-).finally(console.log('done adding songs'))
+// Hits.find({}).then(
+//   Hits.deleteMany({}).then(
+//     hits.forEach(hit =>
+//       hit.forEach(hitSong =>{Hits.create(hitSong.result)
+//       })
+//     )
+//   )
+// ).finally(console.log('done adding songs'))
 
+Artist.find({}).then(artists =>{
+    Hits.find({}).then(hit => {
+        artists.forEach(artist =>{
+            hit.forEach(hits =>{
+                if(artist.name === hits.primary_artist.name){
+                    artist.hits.push(hits)
+                }
+                artist.save()
+            })
+        })
+    })
+})
+
+        
 
 
 // Artist.find({}).then( artist => artist.forEach(artist => {
