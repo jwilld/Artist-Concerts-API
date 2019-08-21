@@ -11,11 +11,24 @@ const youtube = require("./youtube-ids-2.json");
 
 const Genre = require("../../models/Genre");
 
+youtube.forEach((response, i = 0) => {
+  console.log(response.items[0].artist, `${i}`);
+  response.items.forEach((item, i = 0) => {
+    console.log(item.id.videoId, `${i}`);
+    return i + 1;
+  });
+});
 
-youtube.forEach((response, i=0) => {
-    console.log(response.items[0].artist,response.items[0].id.videoId,`******${i}*****`)
-        return i+1
-    })
+Youtube.deleteMany({}).then(
+  youtube.forEach(response => {
+    response.items.forEach(item =>
+      Youtube.create({
+        link: `https://www.youtube.com/watch?v=${item.id.videoId}`,
+        name: response.items[0].artist
+      })
+    );
+  })
+);
 
 // Artist.deleteMany({}).then(Artist.create(artists)).finally(()=> console.log('done seeding artists'))
 
@@ -40,8 +53,6 @@ youtube.forEach((response, i=0) => {
 //         })
 //     })
 // })
-
-        
 
 // Artist.find({}).then( artist => artist.forEach(artist => {
 //     youtube[artist.name].forEach(link => Youtube.deleteMany({})
