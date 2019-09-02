@@ -4,11 +4,7 @@
 const axios = require('axios')
 const fs = require('fs')
 const Artist = require('../../models/Artists')
-const apiKey = "AIzaSyDeuyKWqo0zDyHhjXKY3VLQa0KcxXR-aAs"
-const apiKeyTwo = 'AIzaSyA1KZ99wXWVjT3ZlXmBhsewNG6-4WW1y-M'
-const apiKeyThree = 'AIzaSyBt3Cnclgw5zEOynnD4Fg-OLKnFJF7x-lU'
-const apiKeyFour = 'AIzaSyA3OREP-dYQK5IEJ9goW9Sa2FYRgW4xC2g'
-const apiKeyFive = 'AIzaSyD07U-Rb7WVBePIJwW-JnorJg2QEg2T6zs'
+
 let youtubeList = []
 
 
