@@ -59,8 +59,8 @@ Artist.find({}).then( artist => artist.forEach(artist => {
     .then(Youtube.create({link:`https://www.youtube.com/watch?v=${link.id.videoId}`,name: artist.name})))
 }))
 
-Genre.find({}).then(Genre.deleteMany({}).then(artists.forEach(artist =>{
-    artist.classifications.forEach(classification => {
-        Genre.create({genre: classification.genre.name, name: artist.name})
-    })
-})))
+// Genre.find({}).then(Genre.deleteMany({}).then(artists.forEach(artist =>{
+//     artist.classifications.forEach(classification => {
+//         Genre.create({genre: classification.genre.name, name: artist.name})
+//     })
+// })))
