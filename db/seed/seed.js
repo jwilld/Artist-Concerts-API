@@ -27,7 +27,7 @@ Youtube.find({}).then(
         name: response.items[0].artist
       })
     );
-  }).save()
+  })
 );
 
 // Artist.deleteMany({}).then(Artist.create(artists)).finally(()=> console.log('done seeding artists'))
