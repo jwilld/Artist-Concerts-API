@@ -19,7 +19,7 @@ const Genre = require("../../models/Genre");
 //   });
 // });
 
-Youtube.deleteMany({}).then(
+Youtube.find({}).then(
   youtube.forEach(response => {
     response.items.forEach(item =>
       Youtube.create({
