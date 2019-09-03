@@ -52,24 +52,25 @@ navigate between Ticketmaster and Youtube to see how an artist's concert is.
         "__v": 0
     }
 ### Hits
-  {
+{
     "primary_artist": {
-      "name": "The Notorious B.I.G."
+        "name": "The Notorious B.I.G."
     },
     "_id": "5d6d54c799d4ff0004e250ac",
     "full_title": "Big Poppa by The Notorious B.I.G.",
     "title": "Big Poppa",
     "__v": 0
-  },
-  {
+},
+{
     "primary_artist": {
-      "name": "Big Tymers"
+        "name": "Big Tymers"
     },
     "_id": "5d6d54c799d4ff0004e250a5",
     "full_title": "Broads by Big Tymers",
     "title": "Broads",
     "__v": 0
-  },
+}
+
 
 
 # Paths
