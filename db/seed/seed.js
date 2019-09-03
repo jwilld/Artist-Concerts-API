@@ -69,16 +69,3 @@ Artist.deleteMany({})
 
   
 
-
-
-
-// Youtube.find({}).then(
-//   youtube.forEach(response => {
-//     response.items.forEach(item =>
-//       Youtube.create({
-//         link: `https://www.youtube.com/watch?v=${item.id.videoId}`,
-//         name: response.items[0].artist
-//       })
-//     );
-//   })
-// );
