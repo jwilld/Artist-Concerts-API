@@ -110,6 +110,15 @@ each of the endpoints.
 - Takes the body of the request and updates an artist's link with the key value pair of 'link: (artist's video link)'
 
 
+#Planning
+- The bulk of this was planned using pen and paper so its not very clear.
+
+![alt text](https://i.imgur.com/ssuRhdG.png)
+![alt text](https://imgur.com/a/AfkHksp )
+
+
+
+
 
 
 
