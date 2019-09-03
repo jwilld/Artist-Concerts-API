@@ -15,21 +15,21 @@ const Genre = require("../../models/Genre");
 
 
 
-Artist.deleteMany({})
-  .then(Artist.create(artists))
-  .finally(() => console.log("done seeding artists"));
+// Artist.deleteMany({})
+//   .then(Artist.create(artists))
+//   .finally(() => console.log("done seeding artists"));
 
-Hits.find({})
-  .then(
-    Hits.deleteMany({}).then(
-      hits.forEach(hit =>
-        hit.forEach(hitSong => {
-          Hits.create(hitSong.result);
-        })
-      )
-    )
-  )
-  .finally(console.log("done adding songs"));
+// Hits.find({})
+//   .then(
+//     Hits.deleteMany({}).then(
+//       hits.forEach(hit =>
+//         hit.forEach(hitSong => {
+//           Hits.create(hitSong.result);
+//         })
+//       )
+//     )
+//   )
+//   .finally(console.log("done adding songs"));
 
 Artist.find({}).then(artists => {
   Hits.find({}).then(hit => {
@@ -44,35 +44,35 @@ Artist.find({}).then(artists => {
   });
 });
 
-Artist.find({}).then(artist =>
-  artist.forEach(artist => {
-    youtube[artist.name].forEach(link =>
-      Youtube.deleteMany({}).then(
-        Youtube.create({
-          link: `https://www.youtube.com/watch?v=${link.id.videoId}`,
-          name: artist.name
-        })
-      )
-    );
-  })
-);
+// Artist.find({}).then(artist =>
+//   artist.forEach(artist => {
+//     youtube[artist.name].forEach(link =>
+//       Youtube.deleteMany({}).then(
+//         Youtube.create({
+//           link: `https://www.youtube.com/watch?v=${link.id.videoId}`,
+//           name: artist.name
+//         })
+//       )
+//     );
+//   })
+// );
 
-Genre.find({}).then(
-  Genre.deleteMany({}).then(
-    artists2.forEach(artist => {
-      artist.classifications.forEach(classification => {
-        Genre.create({ genre: classification.genre.name, name: artist.name });
-      });
-    })
-  )
-);
-Youtube.find({}).then(
-  youtube.forEach(response => {
-    response.items.forEach(item =>
-      Youtube.create({
-        link: `https://www.youtube.com/watch?v=${item.id.videoId}`,
-        name: response.items[0].artist
-      })
-    );
-  })
-);
+// Genre.find({}).then(
+//   Genre.deleteMany({}).then(
+//     artists2.forEach(artist => {
+//       artist.classifications.forEach(classification => {
+//         Genre.create({ genre: classification.genre.name, name: artist.name });
+//       });
+//     })
+//   )
+// );
+// Youtube.find({}).then(
+//   youtube.forEach(response => {
+//     response.items.forEach(item =>
+//       Youtube.create({
+//         link: `https://www.youtube.com/watch?v=${item.id.videoId}`,
+//         name: response.items[0].artist
+//       })
+//     );
+//   })
+// );
