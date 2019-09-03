@@ -10,7 +10,7 @@ const hitsController = require('./controllers/hits')
 
 app.use(parser.json())
 
-app.use('/', artistsController)
+app.use('/',artistsController)
 app.use('/',youtubeController)
 app.use('/',hitsController)
 

@@ -3,7 +3,7 @@ const router = express.Router();
 
 const Artist = require("../models/Artists");
 const Youtube = require("../models/Youtube");
-const Genre = require("../models/Genre");
+const Hits = require("../models/Hits");
 
 router.get("/artists", (req, res) => {
   Artist.find({}).then(artists => res.json(artists));
@@ -25,8 +25,8 @@ router.post("/artists", (req, res) => {
 router.delete("/artists/:name", (req, res) => {
   Artist.findOneAndDelete({ name: req.params.name }).then(
     Youtube.deleteMany({ name: req.params.name }).then(
-      Genre.deleteMany({ name: req.params.name }).then(
-        res.send(`Deleted ${req.params.name} from genres,artists and youtube`)
+      Hits.deleteMany({ name: req.params.name }).then(
+        res.send(`Deleted ${req.params.name} from hits,artists and youtube`)
       )
     )
   );
