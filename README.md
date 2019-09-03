@@ -6,9 +6,9 @@ navigate between Ticketmaster and Youtube to see how an artist's concert is.
 
 
 # APIs used and why
-### Concert Artists/Genres
- ###### Ticketmaster - https://developer.ticketmaster.com
- Artists and their genres and drawn from Ticketmster.
+###  Artists
+ ###### Genius - https://docs.genius.com/
+ Artists and their hits songs are drawn from Genius.
 
 ### Concert Videos
  ###### Youtube - https://developers.google.com/youtube/v3/getting-started
@@ -51,19 +51,26 @@ navigate between Ticketmaster and Youtube to see how an artist's concert is.
         "name": "Rich Brian",
         "__v": 0
     }
-### Genres
-    {
-        "_id": "5d4408c421d96a18fa76f5e8",
-        "genre": "Hip-Hop/Rap",
-        "name": "Kevin Gates",
-        "__v": 0
+### Hits
+  {
+    "primary_artist": {
+      "name": "The Notorious B.I.G."
     },
-    {
-        "_id": "5d4408c421d96a18fa76f5e9",
-        "genre": "Hip-Hop/Rap",
-        "name": "NF",
-        "__v": 0
-    }
+    "_id": "5d6d54c799d4ff0004e250ac",
+    "full_title": "Big Poppa by The Notorious B.I.G.",
+    "title": "Big Poppa",
+    "__v": 0
+  },
+  {
+    "primary_artist": {
+      "name": "Big Tymers"
+    },
+    "_id": "5d6d54c799d4ff0004e250a5",
+    "full_title": "Broads by Big Tymers",
+    "title": "Broads",
+    "__v": 0
+  },
+
 
 # Paths
 
@@ -81,12 +88,12 @@ navigate between Ticketmaster and Youtube to see how an artist's concert is.
 ##### Delete '/artists/<<artist name>>' 
 - takes the artists name and finds the genre, Youtube links and its name then deletes them all. 
 
-### Genres
+### Hits
 
-##### Get '/genres' 
+##### Get '/hits' 
 - Returns a list of all artist's genres.
 
-##### Post '/genres'
+##### Post '/hits'
 - takes the body of the request and creates a genre with the key value pair of 'name: (artist name)' and 'genre: (artist's genre)'.
 
 ### Youtube Links
