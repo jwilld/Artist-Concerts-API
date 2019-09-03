@@ -32,9 +32,9 @@ const Genre = require("../../models/Genre");
 //   .finally(console.log("done adding songs"));
 
 Artist.find({}).then(artists => {
-  Hits.find({}).then(hit => {
+  Hits.find({}).then(hits => {
     artists.forEach(artist => {
-      hit.forEach(hits => {
+      hits.forEach(hits => {
         if (artist.name === hits.primary_artist.name) {
           artist.hits.push(hits);
         }
