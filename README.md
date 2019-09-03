@@ -1,7 +1,7 @@
 # Artist Concerts API
 
 # Description
-This API shows concert information for an artist from Ticketmaster. The information about the artist includes their concert videos from youtube and genre. Ultimately this would eliminate the need to 
+This API shows concert information for an artist from Ticketmaster. The information about the artist includes their concert videos from youtube and hits. Ultimately this would eliminate the need to 
 navigate between Ticketmaster and Youtube to see how an artist's concert is.
 
 
@@ -86,15 +86,15 @@ navigate between Ticketmaster and Youtube to see how an artist's concert is.
 - takes the body of the request and creates an artist with the key value pair of 'name: (artist name)'.
 
 ##### Delete '/artists/<<artist name>>' 
-- takes the artists name and finds the genre, Youtube links and its name then deletes them all. 
+- takes the artists name and finds the hit, Youtube links and its name then deletes them all. 
 
 ### Hits
 
 ##### Get '/hits' 
-- Returns a list of all artist's genres.
+- Returns a list of all artist's hits.
 
 ##### Post '/hits'
-- takes the body of the request and creates a genre with the key value pair of 'name: (artist name)' and 'genre: (artist's genre)'.
+- takes the body of the request and creates a hit with the key value pair of 'name: (artist name)' and 'hit: (artist's hit)'.
 
 ### Youtube Links
 
