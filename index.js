@@ -4,7 +4,6 @@ const parser = require("body-parser")
 const app = express()
 
 const artistsController = require('./controllers/artists')
-const genresController = require('./controllers/genre')
 const youtubeController = require('./controllers/youtube')
 const hitsController = require('./controllers/hits')
 
@@ -12,7 +11,6 @@ const hitsController = require('./controllers/hits')
 app.use(parser.json())
 
 app.use('/', artistsController)
-app.use('/', genresController)
 app.use('/',youtubeController)
 app.use('/',hitsController)
 

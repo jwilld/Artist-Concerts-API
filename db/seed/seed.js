@@ -3,7 +3,6 @@ const mongoose = require("../connection");
 const Artist = require("../../models/Artists");
 let artists = require("./all-genius-artists.json");
 
-let artists2 = require("./artists.json")
 
 const Hits = require("../../models/Hits");
 const hits = require("./genius-artists-hits.json");
@@ -11,7 +10,6 @@ const hits = require("./genius-artists-hits.json");
 const Youtube = require("../../models/Youtube");
 const youtube = require("./youtube-ids-2.json");
 
-const Genre = require("../../models/Genre");
 
 
 
@@ -55,17 +53,8 @@ Artist.deleteMany({})
         );
       })
     ).then(console.log('done seeding youtube links'))
-  ).then(
-    Genre.find({}).then(
-      Genre.deleteMany({}).then(
-        artists2.forEach(artist => {
-          artist.classifications.forEach(classification => {
-            Genre.create({ genre: classification.genre.name, name: artist.name });
-          });
-        })
-      )
-    ).then(console.log('done seeding genres'))
-  ).finally(console.log('ALL SEEDING COMPLETED'))
+  )
+  .finally(console.log('ALL SEEDING COMPLETED'))
 
   
 
