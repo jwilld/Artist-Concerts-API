@@ -114,7 +114,7 @@ each of the endpoints.
 - The bulk of this was planned using pen and paper so its not very clear.
 
 ![alt text](https://i.imgur.com/ssuRhdG.png)
-![alt text](https://imgur.com/a/AfkHksp )
+![alt text](https://i.imgur.com/CKdemab.png )
 
 
 
