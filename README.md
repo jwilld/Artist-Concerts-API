@@ -4,6 +4,15 @@
 This API shows concert information for an artist from Ticketmaster. The information about the artist includes their concert videos from youtube and hits. Ultimately this would eliminate the need to 
 navigate between Ticketmaster and Youtube to see how an artist's concert is.
 
+# Local Setup
+
+This API was built using express and node. To start this api locally, first change the port on the index.js
+file to the localhost. Then run mongod in the terminal. Once thats started, run the seed file located in this pathway
+without the quoatations: 'db/seed/seed.js'. After seeding type in 'node' or preferrably 'nodemon index.js'.
+To see the responses depicted in this readme, use Postman or a browser to connect to the localhost. Follow the instructions for
+each of the endpoints.
+
+
 
 # APIs used and why
 ###  Artists
