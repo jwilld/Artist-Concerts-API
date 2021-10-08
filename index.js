@@ -4,13 +4,13 @@ const app = express();
 
 import ArtistController from "./controllers/artists.js";
 import YoutubeController from "./controllers/youtube.js";
-const hitsController = require("./controllers/hits");
+import HitsController from "./controllers/hits.js";
 
 app.use(parser.json());
 
-app.use("/", artistsController);
-app.use("/", youtubeController);
-app.use("/", hitsController);
+app.use("/", ArtistController);
+app.use("/", YoutubeController);
+app.use("/", HitsController);
 
 app.set("port", process.env.PORT || 8080);
 

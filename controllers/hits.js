@@ -1,12 +1,12 @@
-const express = require('express')
-const router = express.Router()
+import express from "express";
+const HitsController = express.Router();
 
-const Hits = require('../models/Hits')
+import Hits from "../models/Hits.js";
 
-router.get('/hits',(req,res) => {
-    Hits.find({}).then(hits => res.json(hits))
-})
-router.post('/hits', (req,res) => {
-    Hits.create(req.body).then(hits => res.json(hits))
-})
-module.exports = router
+HitsController.get("/hits", (req, res) => {
+  Hits.find({}).then((hits) => res.json(hits));
+});
+HitsController.post("/hits", (req, res) => {
+  Hits.create(req.body).then((hits) => res.json(hits));
+});
+export default HitsController;
