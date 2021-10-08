@@ -1,5 +1,6 @@
 {
   "name": "artist-concerts-api",
+  "type": "module",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -19,9 +20,10 @@
   },
   "homepage": "https://github.com/jwilld/artist-concerts-api#readme",
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.22.0",
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
-    "mongoose": "^5.6.9"
+    "mongoose": "^5.6.9",
+    "nodemon": "^2.0.13"
   }
 }
