@@ -27,7 +27,7 @@ ArtistModel.find({}).then((artists) =>
         youtubeList.push(response.data);
       })
       .catch(() => {
-        //stops loop, reducing number of queries
+        //stops subsequent queries that result in error
         throw "ERROR: Data limit exceeded or invalid request.";
       })
       .then(() => {
