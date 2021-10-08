@@ -17,4 +17,3 @@ app.listen(app.get("port"), () => {
   console.log(`✅ PORT: ${app.get("port")} 🌟`);
 });
 
-// app.listen(3003,()=> console.log('port 3003'))
