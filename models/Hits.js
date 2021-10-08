@@ -1,12 +1,12 @@
-const mongoose = require('../db/connection')
+import mongoose from "../db/connection.js";
 
 const Hits = new mongoose.Schema({
-    title: String,
-    full_title:String,
-    primary_artist:{
-        name: String
-    }
-})
+  title: String,
+  full_title: String,
+  primary_artist: {
+    name: String,
+  },
+});
 
-
-module.exports = mongoose.model('Hits',Hits)
+const HitsModel = mongoose.model("Hits", Hits);
+export default HitsModel;

@@ -1,9 +1,9 @@
-const mongoose = require('../db/connection')
+import mongoose from "../db/connection.js";
 
 const Youtube = new mongoose.Schema({
-    name: String,
-    link: String
-})
+  name: String,
+  link: String,
+});
 
-
-module.exports = mongoose.model('Youtube',Youtube)
+const YoutubeModel = mongoose.model("Youtube", Youtube);
+export default YoutubeModel;
