@@ -2,8 +2,8 @@ import express from "express";
 import parser from "body-parser";
 const app = express();
 
-import artistController from "./controllers/artists.js";
-const youtubeController = require("./controllers/youtube");
+import ArtistController from "./controllers/artists.js";
+import YoutubeController from "./controllers/youtube.js";
 const hitsController = require("./controllers/hits");
 
 app.use(parser.json());

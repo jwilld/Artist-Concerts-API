@@ -1,25 +1,21 @@
-const express = require("express");
-const router = express.Router();
+import express from "express";
+const YoutubeController = express.Router();
 
-const Youtube = require("../models/Youtube");
+import YoutubeModel from "../models/Youtube.js";
 
-router.get("/youtube", (req, res) => {
-  Youtube.find({}).then(youtube => res.json(youtube));
+YoutubeController.get("/youtube", (req, res) => {
+  YoutubeModel.find({}).then((youtube) => res.json(youtube));
 });
 
-router.get('/youtube/:name',(req,res) => {
-  Youtube.find({name: req.params.name}).then(links => res.json(links))
-})
+YoutubeController.get("/youtube/:name", (req, res) => {
+  YoutubeModel.find({ name: req.params.name }).then((links) => res.json(links));
+});
 
-router.put("/:name", (req, res) => {
-  Youtube.findOneAndUpdate(
+YoutubeController.put("/:name", (req, res) => {
+  YoutubeModel.findOneAndUpdate(
     { name: req.params.name },
     { $set: { link: req.body.link } }
   );
 });
 
-
-
-
-
-module.exports = router;
+export default YoutubeController;
