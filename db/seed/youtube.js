@@ -1,30 +1,48 @@
 // format for youtube links
-// 'https://www.googleapis.com/youtube/v3/search?part=snippet&q=QUERY&key=[YOUR_API_KEY]' 
+// 'https://www.googleapis.com/youtube/v3/search?part=snippet&q=QUERY&key=[YOUR_API_KEY]'
 
-import axios from "axios;"
-const fs = require('fs')
-const Artist = require('../../models/Artists')
+import axios from "axios";
+import fs from "fs";
+import ArtistModel from "../../models/Artists.js";
 
-let youtubeList = []
-
-
-
-
-
-    // have to get each artist from Artist database
-    Artist.find({}).then(artists => artists.forEach(artist =>{
-        let query = `${artist.name}%20concert`
-        let url = `https://www.googleapis.com/youtube/v3/search?part=snippet&q=${query}&key=${apiKeyFour}`
-        axios.get(url).then(response => {
-            response.data.items[0].artist = `${artist.name}`
-            youtubeList.push(response.data)
-        })
-        // .then(()=> console.log(JSON.stringify(youtubeList))).catch(e => console.log(e))
-        .then(()=> fs.writeFile('youtube-ids-3.json',JSON.stringify(youtubeList),(err)=>{
-            if(err){
-                console.log(err)
+let youtubeList = [];
+// use your Youtube api key
+const YOUR_API_KEY = "";
+// have to get each artist from Artist database
+ArtistModel.find({}).then((artists) =>
+  artists.forEach((artist) => {
+    const artistName = artist.name.replace(/\s/g, "%20");
+    let query = `${artistName}%20concert`;
+    let url = `https://www.googleapis.com/youtube/v3/search?part=snippet&q=${query}&key=${YOUR_API_KEY}`;
+    // removes characters that would cause an unescaped character error
+    url = encodeURI(url);
+    axios
+      .get(url)
+      .then((response) => {
+        try {
+          response.data.items[0].artist = `${artist.name}`;
+        } catch (e) {
+          console.log(e);
+        }
+        youtubeList.push(response.data);
+      })
+      .catch(() => {
+        //stops loop, reducing number of queries
+        throw "ERROR: Data limit exceeded or invalid request.";
+      })
+      .then(() => {
+        // only write file if youtubeList array is populated
+        if (youtubeList.length > 0) {
+          fs.writeFile(
+            "youtube-ids-4.json",
+            JSON.stringify(youtubeList),
+            (err) => {
+              if (err) {
+                console.log(err);
+              }
             }
-        })).catch(e => console.log(e)) 
-    }))
-
-
+          );
+        }
+      });
+  })
+);
