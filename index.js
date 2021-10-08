@@ -1,12 +1,11 @@
 import express from "express";
-import parser from "body-parser";
 const app = express();
 
 import ArtistController from "./controllers/artists.js";
 import YoutubeController from "./controllers/youtube.js";
 import HitsController from "./controllers/hits.js";
 
-app.use(parser.json());
+app.use(express.json());
 
 app.use("/", ArtistController);
 app.use("/", YoutubeController);
