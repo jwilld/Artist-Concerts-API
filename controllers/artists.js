@@ -1,29 +1,28 @@
-const express = require("express");
-const router = express.Router();
+import express from "express";
+const artistController = express.Router();
 
-const Artist = require("../models/Artists");
+import ArtistModel from "../models/Artists.js";
 const Youtube = require("../models/Youtube");
 const Hits = require("../models/Hits");
 
-router.get("/artists", (req, res) => {
-  Artist.find({}).then(artists => res.json(artists));
+artistController.get("/artists", (req, res) => {
+  ArtistModel.find({}).then((artists) => res.json(artists));
 });
 
-router.get("/", (req, res) => {
+artistController.get("/", (req, res) => {
   res.redirect("/artists");
 });
 
-router.get("/artists/:name",(req,res) => {
-    Artist.find({name: req.params.name})
-    .then(artist => res.json(artist))
-})
-
-router.post("/artists", (req, res) => {
-  Artist.create(req.body).then(artist => res.json(artist));
+artistController.get("/artists/:name", (req, res) => {
+  ArtistModel.find({ name: req.params.name }).then((artist) => res.json(artist));
 });
 
-router.delete("/artists/:name", (req, res) => {
-  Artist.findOneAndDelete({ name: req.params.name }).then(
+artistController.post("/artists", (req, res) => {
+  ArtistModel.create(req.body).then((artist) => res.json(artist));
+});
+
+artistController.delete("/artists/:name", (req, res) => {
+  ArtistModel.findOneAndDelete({ name: req.params.name }).then(
     Youtube.deleteMany({ name: req.params.name }).then(
       Hits.deleteMany({ name: req.params.name }).then(
         res.send(`Deleted ${req.params.name} from hits,artists and youtube`)
@@ -32,4 +31,4 @@ router.delete("/artists/:name", (req, res) => {
   );
 });
 
-module.exports = router;
+export default Router;
