@@ -2,13 +2,13 @@
 
 # Description
 
-This API combines music artist data from the Youtube and Genius APIs. It provides an artist's concert videos from Youtube and hit songs.
+This API combines music artist data from the YouTube and Genius APIs. It provides an artist's concert videos from YouTube and hit songs.
 
 # Local Setup
 
 - Ensure Node v15.14.0^ is installed
 - Start a MongoDB instance from your terminal
-- Run "node db/seed/seed.js" from the root directory. This populates the database with the Genius and Youtube JSON data.
+- Run "node db/seed/seed.js" from the root directory. This populates the database with the Genius and YouTube JSON data.
 - Start the index.js file using Node or Nodemon
 - Use Postman or a browser to get query the endpoints depicted in this readme.
 
@@ -24,7 +24,7 @@ Artists and their hits songs are drawn from Genius.
 
 ###### Youtube - https://developers.google.com/youtube/v3/getting-started
 
-The videos for each artist are from Youtube.
+The videos for each artist are from YouTube.
 
 # Technologies
 
@@ -99,7 +99,7 @@ The videos for each artist are from Youtube.
 
 ##### Delete '/artists/<<artist name>>'
 
-- takes the artists name and finds the hit, Youtube links and its name then deletes them all.
+- takes the artists name and finds the hit, YouTube links and its name then deletes them all.
 
 ### Hits
 
@@ -115,7 +115,7 @@ The videos for each artist are from Youtube.
 
 ##### Get '/youtube'
 
-- Returns a list of all artist's Youtube concert links.
+- Returns a list of all artist's YouTube concert links.
 
 ##### Get '/youtube/<<artist name>>'
 
